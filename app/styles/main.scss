@@ -89,3 +89,24 @@ body {
         border-bottom: 0;
     }
 }
+
+.img-content-box {
+  padding: 5px;
+  overflow: auto;
+  img {
+    width: 40%;
+    padding: 5px;
+    border-radius: 17px;
+    float: left;
+  }
+  p {
+    padding: 10px;
+  }
+
+}
+.img-content-box:nth-child(odd) {
+  img {
+    float: right;
+  }
+}
+

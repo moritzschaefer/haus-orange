@@ -11,7 +11,7 @@ angular.module('hausOrangeHtmlApp', [
         controller: 'MainCtrl'
       })
       .when('/images', {
-        templateUrl: 'views/main.html',
+        templateUrl: 'views/images.html',
         controller: 'MainCtrl'
       })
       .otherwise({
