@@ -14,6 +14,10 @@ angular.module('hausOrangeHtmlApp', [
         templateUrl: 'views/images.html',
         controller: 'MainCtrl'
       })
+      .when('/location', {
+        templateUrl: 'views/location.html',
+        controller: 'MainCtrl'
+      })
       .otherwise({
         redirectTo: '/home'
       });
