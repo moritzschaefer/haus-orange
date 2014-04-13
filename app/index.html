@@ -25,19 +25,19 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="container" ng-init="menuItems=[{'title': 'Haus Orange', 'link': 'home'}, {'title': 'Ausstattung', 'link': 'images'}, {'title': 'Standort', 'link': 'location'}]">
+        <div id="wrap">
+            <div class="container" ng-init="menuItems=[{'title': 'Haus Orange', 'link': 'home'}, {'title': 'Ausstattung', 'link': 'images'}, {'title': 'Standort', 'link': 'location'}, {'title': 'Preise', 'link': 'price'}, {'title': 'Kontakt', 'link': 'contact'}]">
+                <div class="header">
+                    <ul class="nav nav-pills pull-right" ng-repeat="item in menuItems">
+                        <li data-path="/{{item.link}}" active-link="active"><a ng-href="#/{{ item.link }}">{{ item.title  }}</a></li>
+                    </ul>
+                    <h3 class="text-muted">Haus Orange</h3>
+                    <p>IHR Ferienhaus in Tübingen</p>
+                </div>
 
-            <div class="header">
-                <ul class="nav nav-pills pull-right" ng-repeat="item in menuItems">
-                    <li><a ng-href="#/{{ item.link }}">{{ item.title  }}</a></li>
-                </ul>
-                <h3 class="text-muted">Haus Orange</h3>
-                <p>IHR Ferienhaus in Tübingen</p>
-            </div>
-
-            <div ng-view=""></div>
+                <div ng-view=""></div>
         </div>
-
+    </div>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
         <script>

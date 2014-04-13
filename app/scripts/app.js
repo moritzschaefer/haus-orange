@@ -18,6 +18,14 @@ angular.module('hausOrangeHtmlApp', [
         templateUrl: 'views/location.html',
         controller: 'MainCtrl'
       })
+      .when('/price', {
+        templateUrl: 'views/price.html',
+        controller: 'MainCtrl'
+      })
+      .when('/contact', {
+          templateUrl: 'views/contact.html',
+          controller: 'MainCtrl'
+      })
       .otherwise({
         redirectTo: '/home'
       });
@@ -27,4 +35,21 @@ angular.module('hausOrangeHtmlApp', [
         scope: {model: '=content'},
         templateUrl: 'views/partials/image-text.html',
     };
-});
+})
+.directive('activeLink', ['$location', function(location) {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs, controller) {
+        var clazz = attrs.activeLink;
+        var path = attrs.path;
+        scope.location = location;
+        scope.$watch('location.path()', function(newPath) {
+          if (path === newPath) {
+            element.addClass(clazz);
+          } else {
+            element.removeClass(clazz);
+          }
+        });
+      }
+    };
+  }]);
