@@ -2,7 +2,8 @@
 
 angular.module('hausOrangeHtmlApp', [
   'ngCookies',
-  'ngRoute'
+  'ngRoute',
+  'bootstrapLightbox'
 ])
   .config(function ($routeProvider) {
     $routeProvider

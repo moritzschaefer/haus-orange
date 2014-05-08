@@ -5,7 +5,9 @@
     </p>
 </div>
 
-<div class="row marketing" >
-    <div home-image class="img-content-box" content="image" ng-repeat="image in homeImages"></div>
+<div class="row marketing">
+    <div ng-repeat="image in homeImages">
+        <span ng-click="openLightboxModal($index)"><div home-image class="img-content-box" content="image"></div></span>
+    </div>
 </div>
 

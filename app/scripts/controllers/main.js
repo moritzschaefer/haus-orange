@@ -1,11 +1,11 @@
 'use strict';
 
 angular.module('hausOrangeHtmlApp')
-.controller('MainCtrl', function ($scope) {
+.controller('MainCtrl', function ($scope, Lightbox) {
     $scope.homeImages = [
-        {'image': 'home/1.jpg','text': 'Das Ferienhaus Orange ist ein freistehendes 2-Zimmer-Haus mit Bad und Küche in Tübingen Derendingen mit 65m² Wohnfläche.'},
-        {'image': 'home/2.jpg','text': 'Es ist hochwertig und komfortabel ausgestattet'},
-        {'image': 'home/3.jpg','text': '... und bietet Platz für vier Personen in gemütlicher Atmosphäre.'}
+        {'width': '1024', 'height': '768', 'url': 'images/home/1.jpg','image': 'images/home/1.jpg','text': 'Das Ferienhaus Orange ist ein freistehendes 2-Zimmer-Haus mit Bad und Küche in Tübingen Derendingen mit 65m² Wohnfläche.'},
+        {'width': '1024', 'height': '768', 'url': 'images/home/2.jpg','image': 'images/home/2.jpg','text': 'Es ist hochwertig und komfortabel ausgestattet'},
+        {'width': '1024', 'height': '768', 'url': 'images/home/3.jpg','image': 'images/home/3.jpg','text': '... und bietet Platz für vier Personen in gemütlicher Atmosphäre.'}
     ];
     $scope.environmentImages = [
         {'image': 'environment/1.jpg','text': 'Eingangsbereich mit Garderobe.Treppenaufgang in den ersten Stock'},
@@ -26,4 +26,7 @@ angular.module('hausOrangeHtmlApp')
 
         {'image': 'environment/7.jpg', 'text': 'Dusche ohne Stufe begehbar'}
     ];
+    $scope.openLightboxModal = function (index) {
+        Lightbox.openModal($scope.homeImages, index);
+    };
 });
