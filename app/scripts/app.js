@@ -13,7 +13,7 @@ angular.module('hausOrangeHtmlApp', [
       })
       .when('/images', {
         templateUrl: 'views/images.html',
-        controller: 'MainCtrl'
+        controller: 'ImagesCtrl'
       })
       .when('/location', {
         templateUrl: 'views/location.html',

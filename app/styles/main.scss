@@ -96,6 +96,7 @@ body {
   padding: 5px;
   overflow: auto;
   img {
+    cursor: pointer;
     width: 40%;
     padding: 5px;
     border-radius: 17px;
@@ -176,8 +177,12 @@ a:hover {
   }
 }
 .jumbotron p.lead {
-  color: #CCCCCC;
+  color: #808080;
 }
 iframe {
   border-radius: 10px;
+}
+
+.header h3 {
+  color: #363636;
 }
