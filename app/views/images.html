@@ -6,6 +6,8 @@
 </div>
 
 <div class="row marketing">
-    <div class="img-content-box" home-image content="image" ng-repeat="image in environmentImages"></div>
+    <div ng-repeat="image in environmentImages">
+        <span ng-click="openLightboxModal($index)"><div home-image class="img-content-box" content="image"></div></span>
+    </div>
 </div>
 

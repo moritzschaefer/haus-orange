@@ -106,9 +106,16 @@ body {
   }
 
 }
-.img-content-box:nth-child(odd) {
-  img {
+.row.marketing >div:nth-child(odd) {
+  .img-content-box img {
     float: right;
+
+  }
+}
+.row.marketing >div:nth-child(even) {
+  .img-content-box img {
+    margin-right: 10px;
+
   }
 }
 
