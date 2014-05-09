@@ -284,8 +284,7 @@ module.exports = function (grunt) {
             '*.html',
             'views/{,*/}*.html',
             'bower_components/**/*',
-            'images/{,*/}*.{webp}',
-            'images/*.{pdf}',
+            'images/{,*/}*.{webp,pdf}',
             'fonts/*'
           ]
         }, {
@@ -394,7 +393,7 @@ module.exports = function (grunt) {
     'cdnify',
     'cssmin',
     'uglify',
-    'rev',
+    //'rev',
     'usemin',
     'htmlmin'
   ]);
