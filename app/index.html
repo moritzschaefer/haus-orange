@@ -29,7 +29,7 @@
 
         <!-- Add your site or application content here -->
         <div id="wrap">
-            <div class="container" ng-init="menuItems=[{'title': 'Haus Orange', 'link': 'home'}, {'title': 'Ausstattung', 'link': 'images'}, {'title': 'Standort', 'link': 'location'}, {'title': 'Preise', 'link': 'price'}, {'title': 'Kontakt', 'link': 'contact'}]">
+            <div class="container" ng-init="menuItems=[{'title': 'Standort', 'link': 'location'}, {'title': 'Preise', 'link': 'price'}, {'title': 'Kontakt', 'link': 'contact'}, {'title': 'Ausstattung', 'link': 'images'}, {'title': 'Haus Orange', 'link': 'home'}]">
                 <div class="header">
                     <ul class="nav nav-pills pull-right" ng-repeat="item in menuItems">
                         <li data-path="/{{item.link}}" active-link="active"><a ng-href="#/{{ item.link }}">{{ item.title  }}</a></li>
