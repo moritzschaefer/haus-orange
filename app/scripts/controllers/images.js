@@ -10,13 +10,13 @@ angular.module('hausOrangeHtmlApp')
         {'width': '540', 'height': '400', 'url': 'images/environment/3.jpg','image': 'images/environment/3.jpg', 'text': 'Die Küche mit Esstisch, vollständig ausgestattet mit Umluftherd, Dunstabzug, Kühlschrank mit ***Gefrierfach, Geschirrspülmaschine. Kaffeemaschine und Radio'},
 
 
-        {'width': '540', 'height': '400', 'url': 'images/environment/4.jpg','image': 'images/environment/4.jpg', 'text': 'Das Schlafzimmer mit Doppelbett (160 X 200 cm) und KleiderschrankAufgang zur Leseecke'},
+        {'width': '540', 'height': '400', 'url': 'images/environment/4.jpg','image': 'images/environment/4.jpg', 'text': 'Das Schlafzimmer mit Doppelbett (160 X 200 cm) und Kleiderschrank Aufgang zur Leseecke'},
 
 
         {'width': '540', 'height': '400', 'url': 'images/environment/5.jpg','image': 'images/environment/5.jpg', 'text': 'Gemütliche Leseecke unterm Dach'},
 
 
-        {'width': '540', 'height': '400', 'url': 'images/environment/6.jpg','image': 'images/environment/6.jpg', 'text': 'Das Bad hat Fussbodenheizung Dusche und Urinal'},
+        {'width': '540', 'height': '400', 'url': 'images/environment/6.jpg','image': 'images/environment/6.jpg', 'text': 'Das Bad hat Fußbodenheizung, Dusche und Urinal'},
 
 
         {'width': '540', 'height': '400', 'url': 'images/environment/7.jpg','image': 'images/environment/7.jpg', 'text': 'Dusche ohne Stufe begehbar'}

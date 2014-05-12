@@ -99,11 +99,14 @@ body {
     cursor: pointer;
     width: 40%;
     padding: 5px;
+    margin-left: 10px;
     border-radius: 17px;
     float: left;
   }
   p {
-    padding: 10px;
+    padding: 20px;
+    padding-top: 30px;
+    font-size: 16px;
   }
 
 }
@@ -185,4 +188,16 @@ iframe {
 
 .header h3 {
   color: #363636;
+}
+p a span:hover {
+  color: orange;
+}
+.address {
+  margin: 9px 0px 7px 20px;
+  font-weight: 700;
+
+  span {
+  display: block;
+  margin-bottom: 4px;
+  }
 }
