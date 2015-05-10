@@ -19,7 +19,9 @@ angular.module('hausOrangeHtmlApp')
         {'width': '540', 'height': '400', 'url': 'images/environment/6.jpg','image': 'images/environment/6.jpg', 'text': 'Das Bad hat Fußbodenheizung, Dusche und Urinal'},
 
 
-        {'width': '540', 'height': '400', 'url': 'images/environment/7.jpg','image': 'images/environment/7.jpg', 'text': 'Dusche ohne Stufe begehbar'}
+        {'width': '540', 'height': '400', 'url': 'images/environment/7.jpg','image': 'images/environment/7.jpg', 'text': 'Dusche ohne Stufe begehbar'},
+
+        {'width': '540', 'height': '400', 'url': 'images/environment/8.jpg','image': 'images/environment/8.jpg', 'text': 'Gemütliche Frühstücks- und Leseecke vor dem Haus'}
     ];
     $scope.openLightboxModal = function (index) {
 
